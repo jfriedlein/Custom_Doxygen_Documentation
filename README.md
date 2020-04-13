@@ -1,7 +1,7 @@
 # Custom_Doxygen_Documentation
 Create a Doxygen documentation page from a standard C++ Code file
 
-The design of the documentation inspired by the deal.ii tutorial programs. Because I was not able to figure out how one can configure Doxygen such that it exactly creates  what is shown in this documentation, I created this quick and dirty script to do this for me the old-school way.
+The design of the documentation is inspired by the deal.ii tutorial programs. Because I was not able to figure out how one can configure Doxygen such that it exactly creates  what is shown in this documentation, I created this quick and dirty script to do this for me the old-school way.
 
 ## Requirements
 - Python3 (not tested for Python2)
@@ -25,8 +25,7 @@ your_code.cc
 \endcode
 
 6. Run the script "make_documentation.asc". This will merge your code into the mainpage, run Doxygen over it and open the created documentation in the web browser.
-7. To host the documentation on a GitHub page you can follow this straightforward guide https://goseeky.wordpress.com/2017/07/22/documentation-101-doxygen-with-github-pages/, where the new index.html file has already been created and properly placed for you.
-
+7. To host the documentation on a GitHub page you can follow this straightforward guide https://goseeky.wordpress.com/2017/07/22/documentation-101-doxygen-with-github-pages/, where the new index.html file has already been created and properly placed for you in the docs folder.
 
 ## ToDo
 - Try to incorporate more than one C++ file
