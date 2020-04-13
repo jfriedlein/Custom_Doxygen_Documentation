@@ -1,0 +1,34 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000001}%
+\hypertarget{todo__todo000001}{}%
+page \hyperlink{index}{Hybrid solution method with dissipation energy-\/based arc-\/length method} ]add the flow chart from the MA 
+
+Maybe add the derivation from the MA 
+
+Check whether we need the template$<$int dim$>$ for some reason
+\begin{DoxyItemize}
+\item Initialise the instance with the initial load increment {\itshape initial\+\_\+increment} (applied in the first load step), the driver (Neumann=1, Dirichlet=2) that applies the load and the number of dofs per cell {\itshape dofs\+\_\+per\+\_\+cell} (e.\+g. from {\itshape fe.\+dofs\+\_\+per\+\_\+cell}) 
+\end{DoxyItemize}
+
+Add the example from the MA with the pictures
+\begin{DoxyItemize}
+\item Compute the constraint equation (derived from the energy increment) 
+\end{DoxyItemize}
+
+Try to merge the two solve\+\_\+linear\+\_\+systemX functions
+
+Format the code below, use subheadings, etc.
+
+clean up the documentation of the classes
+
+use boldsymbol for tensors
+
+It would be nice to use the data types from the Sacado\+\_\+\+Wrapper for all the Sacado variables. But somehow the operators (multiply$\ast$, ...) seem to cause conflicts again.
+
+Maybe add some more text on the linearization 
+
+try to merge the fad\+\_\+double data type with this templated data type 
+
+Add the link to the ac.\+nz site
+\end{DoxyRefList}
