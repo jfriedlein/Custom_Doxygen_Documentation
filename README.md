@@ -24,7 +24,10 @@ your_code.cc
 
 \endcode
 
-6. Run the script "make_documentation.asc". This will merge your code into the mainpage, run Doxygen over it and open the created documentation in the web browser.
+6. Run the script "make_documentation.asc". This will merge your code into the mainpage, run Doxygen over it and open the created documentation in the web browser. To run the .asc file you might have to call
+
+chmod 755 make_documentation.asc # this enables the file to run in the terminal as a shell code
+
 7. To host the documentation on a GitHub page you can follow this straightforward guide https://goseeky.wordpress.com/2017/07/22/documentation-101-doxygen-with-github-pages/, where the new index.html file has already been created and properly placed for you in the docs folder.
 
 ## ToDo
