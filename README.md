@@ -32,3 +32,4 @@ chmod 755 make_documentation.asc # this enables the file to run in the terminal 
 
 ## ToDo
 - Try to incorporate more than one C++ file
+- Find out how this can directly be done with Doxygen and with an entire collection of files
