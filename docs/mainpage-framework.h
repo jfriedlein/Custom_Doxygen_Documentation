@@ -54,46 +54,7 @@ This overview shall give you a first impression what to expect ...
 	DoFTools::extract_dofs(dof_handler, u_mask, u_dofs);
 	hybridSolver.reinit_vectors();
 	@endcode
-- Set the internal vectors to zero before we assemble them. Best done together with the reseting of the tangent matrix and right-hand side.
-	@code
-	hybridSolver.set_zero_vectors();
-	@endcode
-- Assemble the internal vectors for the arc-length method
-	at the end of the assembly of each cell contribution (only needed for Dirichlet driver)
-	@code
-	hybridSolver.assemble_for_AL_a_hat(*);
-	@endcode
-- Distribute the cell contribution of the f_star vector into the global vector
-	at the end of the assembly of each cell contribution (only needed for material models that contain plasticity)
-	@code
-	hybridSolver.distribute_f_star(*);
-	@endcode
-- Filter the internal vectors to remove the dof components that do not belong the displacement field
-	(only needed for two- or more-field problems) at the end of the assembly routine (only called after the vectors are fully assembled)
-	@code
-	hybridSolver.filter_vectors();
-	@endcode
-- Assemble the \a f_hat and \a u_hat vectors that describe where the load shall be applied. (not included in the solution method)
-	@todo Add the example from the MA with the pictures
-- Compute the constraint equation (derived from the energy increment)
-	@todo Maybe add the derivation from the MA
-	@code
-	hybridSolver.compute_constraintEq(*);
-	@endcode
-- If the load step converged, we put the new values of the internal vectors \a *_i into the converged quantities \a *_n
-	@code
-	hybridSolver.update_n_from_i();
-	@endcode
-- If the load step failed to converge, and we have to compute the Newton-Raphson (NR) update
-	we call for regular NR methods (load- and displacement control)
-	@code
-	hybridSolver.solve_linear_system(*);
-	@endcode
-	or for the arc-length method we call
-	@code
-	hybridSolver.solve_linear_system_AL(*);
-	@endcode
-	@todo Try to merge the two solve_linear_systemX functions
+
 
 @todo Format the code below, use subheadings, etc.
 
