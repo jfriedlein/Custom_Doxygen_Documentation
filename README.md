@@ -30,6 +30,12 @@ chmod 755 make_documentation.asc # this enables the file to run in the terminal 
 
 7. To host the documentation on a GitHub page you can follow this straightforward guide https://goseeky.wordpress.com/2017/07/22/documentation-101-doxygen-with-github-pages/, where the new index.html file has already been created and properly placed for you in the docs folder.
 
+## Formalism
+- use "//..." instead of "// ..." when you don't want the comment to be transformed to normal text, but keep it as a C++ comment
+
+
 ## ToDo
 - Try to incorporate more than one C++ file
 - Find out how this can directly be done with Doxygen and with an entire collection of files
+- using "// @note ..." requires an empty line after the comment ended, maybe we can avoid this or e.g. use "//@note ..." when we do not want this behaviour. The blank could decide whether the following line e.g. another comment shall belong to this @note or @todo, or whether that is something unrelated.
+- complement the Formalism (and change its heading)
