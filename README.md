@@ -1,6 +1,10 @@
 # Custom_Doxygen_Documentation
 Create a Doxygen documentation page from a standard C++ Code file
 
+# DEPRECATED !
+The proper way to do this was found in the mean time, which will be added here soon (however, that's not on my priority list, sorry). If you need it right away, send me a message or create an Issue.
+# !
+
 The design of the documentation is inspired by the deal.ii tutorial programs. Because I was not able to figure out how one can configure Doxygen such that it exactly creates  what is shown in this documentation, I created this quick and dirty script to do this for me the old-school way.
 
 ## Requirements
