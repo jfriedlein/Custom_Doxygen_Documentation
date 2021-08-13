@@ -53,3 +53,6 @@ chmod 755 make_documentation.asc # this enables the file to run in the terminal 
 - Find out how this can directly be done with Doxygen and with an entire collection of files
 - using "// @note ..." requires an empty line after the comment ended, maybe we can avoid this or e.g. use "//@note ..." when we do not want this behaviour. The blank could decide whether the following line e.g. another comment shall belong to this @note or @todo, or whether that is something unrelated.
 - complement the Formalism (and change its heading)
+
+## BUGS
+- For a code line "										* JxW;" the multiplication operator "*" is not printed, e.g. in SRI.
